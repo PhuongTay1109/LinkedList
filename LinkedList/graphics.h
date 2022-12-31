@@ -263,8 +263,7 @@ void rectangle(RECT pos) {
 
 void node(int x1, int y1, int x2, int y2, const char* text) {
 	// draw rectangle
-	rectangle(x1, y1, x2, y2);
-	drawText(x1 + (x2 - x1 - 20) / 2, y1 + (y2 - y1) / 2, text, 0, 0, 0);
+	block(x1, y1, x2, y2, text);
 	// draw arrow
 	line(x2, y1 + (y2 - y1) / 2, x2 + 50, y1 + (y2 - y1) / 2);
 	line (x2 + 50, y1 + (y2 - y1) / 2, x2 + 40, y1 + (y2 - y1) / 2 - 10);
